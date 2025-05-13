@@ -2,6 +2,18 @@ const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 const puzzle = new BeanPuzzle();
 
+// Resize canvas to fit window
+// function resizeCanvas() {
+//   const padding = 40; // optional, for breathing space
+//   canvas.width = window.innerWidth - padding;
+//   canvas.height = window.innerHeight * 0.8;
+// }
+// resizeCanvas();
+// window.addEventListener('resize', () => {
+//   resizeCanvas();
+//   draw();
+// });
+
 function drawBean(x, y, value) {
   ctx.beginPath();
   ctx.arc(x, y, 12, 0, Math.PI * 2);

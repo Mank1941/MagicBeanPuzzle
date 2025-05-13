@@ -18,7 +18,12 @@ canvas {
     display: block;
     margin: 20px auto;
     background-color: #28213d;
+    
+    width: 100%;
+    max-width: 500px;
+    height: auto; /* maintain aspect ratio */
     image-rendering: pixelated;
+    image-rendering: crisp-edges;
   }
 
   button {
@@ -61,6 +66,7 @@ canvas {
   }
 
   .layout {
+    /* width: 100%; */
     display: block;
     justify-content: center;
     align-items: flex-start;
